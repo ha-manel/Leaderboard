@@ -51,6 +51,10 @@ main {
   padding: 3px 15px;
 }
 
+#refresh-btn:active {
+  transform: scale(0.98);
+}
+
 #leaderboard-list ul {
   padding: 0;
   list-style-type: none;
@@ -60,10 +64,17 @@ main {
 
 .score {
   padding: 12px;
+  display: flex;
 }
 
 .score:nth-child(2n) {
   background-color: #f5f3f4;
+}
+
+.score span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
 }
 
 #add-score-section {
@@ -99,6 +110,10 @@ input {
   padding: 3px 15px;
   align-self: flex-end;
   margin-top: 5px;
+}
+
+#submit-btn:active {
+  transform: scale(0.98);
 }
 
 #confirmation-msg {
