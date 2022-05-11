@@ -1,7 +1,7 @@
 import './style.css';
 
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const gameID = 'hrjenfXzL9VWMTxd3Uzc';
+const gameID = 'XTgqkFl7JlcjYMYAc44o';
 const requestURL = `${baseURL}${gameID}/scores/`;
 
 // add new score
@@ -52,7 +52,7 @@ const getScoresList = async () => {
   await fetch(requestURL)
     .then((response) => response.json())
     .then((json) => {
-      scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score) => `<li class="score">${score.user}: ${score.score}</li>`).join('')}`;
+      scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score, index) => `<li class="score"><span>${index + 1}.</span>${score.user}: ${score.score}</li>`).join('')}`;
     });
 };
 

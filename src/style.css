@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
 
+html {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: 'Exo 2', sans-serif;
+  border: 1px solid #e9ecef;
+  padding: 80px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 h1 {
@@ -34,19 +45,36 @@ main {
   font-size: 1rem;
   font-weight: 500;
   color: #212529;
-  border: 1.5px solid #000;
+  border: 1.5px solid #b1a7a6;
+  border-radius: 5px;
   background-color: transparent;
   padding: 3px 15px;
+}
+
+#refresh-btn:active {
+  transform: scale(0.98);
 }
 
 #leaderboard-list ul {
   padding: 0;
   list-style-type: none;
-  border: 1.5px solid #000;
+  border: 1.5px solid #b1a7a6;
+  border-radius: 5px;
 }
 
 .score {
   padding: 12px;
+  display: flex;
+}
+
+.score:nth-child(2n) {
+  background-color: #f5f3f4;
+}
+
+.score span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
 }
 
 #add-score-section {
@@ -61,6 +89,9 @@ form {
 
 input {
   padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #b1a7a6;
   margin-bottom: 10px;
   font-size: 13px;
 }
@@ -73,10 +104,16 @@ input {
   font-size: 1rem;
   font-weight: 500;
   color: #212529;
+  border: 1.5px solid #b1a7a6;
+  border-radius: 5px;
   background-color: transparent;
   padding: 3px 15px;
   align-self: flex-end;
   margin-top: 5px;
+}
+
+#submit-btn:active {
+  transform: scale(0.98);
 }
 
 #confirmation-msg {
