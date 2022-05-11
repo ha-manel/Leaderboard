@@ -5,6 +5,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 120px 0;
 }
 
 body {
