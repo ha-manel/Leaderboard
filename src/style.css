@@ -16,7 +16,7 @@ main {
 }
 
 #leaderboard-list {
-  width: 350px;
+  width: 380px;
   margin-right: 100px;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 #add-score-section {
-  width: 260px;
+  width: 270px;
 }
 
 form {
@@ -77,4 +77,20 @@ input {
   padding: 3px 15px;
   align-self: flex-end;
   margin-top: 5px;
+}
+
+#confirmation-msg {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px 0;
+}
+
+#confirmation-msg.active {
+  opacity: 1;
+  background-color: #55a630;
 }
