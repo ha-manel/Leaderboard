@@ -1,7 +1,7 @@
 import './style.css';
 
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const gameID = 'XTgqkFl7JlcjYMYAc44o';
+const gameID = 'GOQxFiWpja2X8drCwwb7';
 const requestURL = `${baseURL}${gameID}/scores/`;
 
 // add new score
