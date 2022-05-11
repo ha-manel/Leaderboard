@@ -11,7 +11,7 @@ const form = document.querySelector('form');
 const inputs = document.querySelectorAll('input');
 const confirmationMsg = document.querySelector('#confirmation-msg');
 
-async function addNewScore() {
+const addNewScore = async () => {
   await fetch(requestURL, {
     method: 'POST',
     body: JSON.stringify({
@@ -27,7 +27,7 @@ async function addNewScore() {
       confirmationMsg.innerText = json.result;
       confirmationMsg.classList.add('active');
     });
-}
+};
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -48,13 +48,13 @@ inputs.forEach((input) => {
 // get list of scores
 const scoresList = document.querySelector('#leaderboard-list ul');
 
-async function getScoresList() {
+const getScoresList = async () => {
   await fetch(requestURL)
     .then((response) => response.json())
     .then((json) => {
       scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score) => `<li class="score">${score.user}: ${score.score}</li>`).join('')}`;
     });
-}
+};
 
 getScoresList();
 
