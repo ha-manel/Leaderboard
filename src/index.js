@@ -52,7 +52,7 @@ async function getScoresList() {
   await fetch(requestURL)
     .then((response) => response.json())
     .then((json) => {
-      scoresList.innerHTML = `${json.result.sort().reverse().map((score) => `<li class="score">${score.user}: ${score.score}</li>`).join('')}`;
+      scoresList.innerHTML = `${json.result.sort((a, b) => b.score - a.score).map((score) => `<li class="score">${score.user}: ${score.score}</li>`).join('')}`;
     });
 }
 
