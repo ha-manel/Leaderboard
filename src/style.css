@@ -5,15 +5,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 0;
+  padding: 10% 0;
 }
 
 body {
   font-family: 'Exo 2', sans-serif;
   border: 1px solid #e9ecef;
-  padding: 80px;
   border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 80px;
 }
 
 h1 {
@@ -131,4 +131,47 @@ input {
 #confirmation-msg.active {
   opacity: 1;
   background-color: #55a630;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    padding: 28% 0;
+  }
+
+  body {
+    width: 95%;
+    max-width: 512px;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding: 10%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #leaderboard-list {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html{
+    padding: 50% 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #add-score-section {
+    width: 100%;
+  }
+
+  #refresh-btn{
+    margin-left: 10px;
+  }
 }
