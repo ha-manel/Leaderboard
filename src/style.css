@@ -2,29 +2,32 @@
 
 html {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 0;
+  overflow-x: hidden;
+  padding: 5% 0;
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Exo 2', sans-serif
+}
+
+main {
+  width: 50%;
+  display: flex;
   border: 1px solid #e9ecef;
   border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   padding: 80px;
+  margin: 0 auto;
 }
 
 h1 {
+  width: 50%;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 60px;
-  margin-top: 0;
-}
-
-main {
-  display: flex;
+  margin: 0 auto 50px;
 }
 
 #leaderboard-list {
@@ -135,20 +138,23 @@ input {
 
 @media screen and (max-width: 900px) {
   html {
-    padding: 28% 0;
+    padding: 50px 0;
   }
 
-  body {
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
     width: 95%;
     max-width: 512px;
     min-width: 200px;
     box-sizing: border-box;
     padding: 10%;
-  }
-
-  main {
     flex-direction: column-reverse;
     align-items: center;
+    margin: 0 auto;
   }
 
   #leaderboard-list {
@@ -159,10 +165,6 @@ input {
 }
 
 @media screen and (max-width: 350px) {
-  html {
-    padding: 50% 0;
-  }
-
   h1 {
     font-size: 30px;
   }
