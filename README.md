@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse-Leaderboard
+# Leaderboard
 
-> This is a Microverse (@microverseinc) project in which I created a Leaderboard using Leaderboard API service, webpack, and gitflow.
+> A leaderboard created using Leaderboard API service, webpack, and gitflow. The user can add a new score and refresh to see his ranking in the leaderboard.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ Build a Leaderboard list app using:
 
 ## Live Demo
 
-Check **Live Demo** [here.](https://ha-manel.github.io/Microverse-Leaderboard/dist/index.html)
+Check **Live Demo** [here.](https://ha-manel.github.io/Leaderboard/)
 
 ## Getting Started
 
